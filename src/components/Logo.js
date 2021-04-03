@@ -2,6 +2,7 @@ import React from "react";
 
 export default function Logo() {
   return (
+
     <svg
       className="logo"
       clipRule="evenodd"
