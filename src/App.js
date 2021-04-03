@@ -28,14 +28,16 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      show: false
+      show: false,
+      name: "",
+      description: "",
     };
     this.showModal = this.showModal.bind(this);
     this.hideModal = this.hideModal.bind(this);
   }
 
-  showModal = () => {
-    this.setState({ show: true });
+  showModal = (name, description) => {
+    this.setState({ show: true, name, description });
   };
 
   hideModal = () => {
@@ -45,10 +47,10 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Modal show={this.state.show} handleClose={this.hideModal}>
-          <p>Modal</p>
+        <Modal show={this.state.show}>
+          <MediaCard handleClose={this.hideModal} name={this.state.name} description={this.state.description}/>
         </Modal>
-        <Menu clickHandler={this.showModal} />
+        <Menu clickHandler={this.showModal}/>
       </div>
 
     );
