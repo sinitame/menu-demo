@@ -19,7 +19,7 @@ const useStyles = makeStyles({
   },
 });
 
-export default function MediaCard() {
+export default function MediaCard({handleClose}) {
   const classes = useStyles();
 
   return (
@@ -41,11 +41,8 @@ export default function MediaCard() {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" color="primary">
-          Share
-        </Button>
-        <Button size="small" color="primary">
-          Learn More
+        <Button size="small" color="primary" onClick={handleClose}>
+          Close
         </Button>
       </CardActions>
     </Card>
