@@ -11,6 +11,8 @@ import Typography from '@material-ui/core/Typography';
 const useStyles = makeStyles({
   root: {
     maxWidth: 345,
+    zIndex: 10,
+    position: "absolute",
   },
   media: {
     height: 140,
