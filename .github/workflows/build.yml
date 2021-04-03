@@ -6,6 +6,8 @@ jobs:
   buildAndTest:
     name: Build and Test
     runs-on: ubuntu-latest
+    env: 
+      CI: false
     steps:
       - uses: actions/checkout@v1
 
