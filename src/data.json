@@ -31,6 +31,30 @@
       "price": "22"
     }
   ],
+  "starters": [
+    {
+      "name": "Entree 1",
+      "description": "Caca nez sur lit de giromon",
+      "price": "19"
+    },
+    {
+      "name": "Entree 2",
+      "description": "Bolognese au parmesan de pied",
+      "price": "17"
+    }
+  ],
+  "deserts": [
+    {
+      "name": "Soupe d'ongle à l'araignee",
+      "description": "ongles grilles et marinés à la sauce soja",
+      "price": "25"
+    },
+    {
+      "name": "Glace de pue a la sauce bechamel",
+      "description": "Extrait de furoncle revisité façon Waber",
+      "price": "17"
+    }
+  ],
   "sides": [
     {
       "name": "Fries",
