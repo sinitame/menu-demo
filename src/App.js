@@ -12,13 +12,18 @@ export default function App() {
       <Provider>
         <div className="menu">
           <Logo/>
-          <Mains type="Starters" meals={starters}/>
-          <Mains type="Main" meals={mains}/>
-          <Mains type="Desserts" meals={deserts}/>
-          <aside className="aside">
-            <Extras type="Sides" items={sides}/>
-            <Extras type="Drinks" items={drinks}/>
-          </aside>
+          <div className="right">
+            <Mains type="Starters" meals={starters}/>
+            <Mains type="Main" meals={mains}/>
+            <Mains type="Desserts" meals={deserts}/>
+          </div>
+          <div className="left">
+            <aside className="aside">
+              <Extras type="Sides" items={sides}/>
+              <Extras type="Drinks" items={drinks}/>
+            </aside>
+          </div>
+
         </div>
       </Provider>
   );
