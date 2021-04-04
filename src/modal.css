@@ -35,7 +35,7 @@
 
   @media only screen and (max-width: 750px) {
     .modal-main {
-      max-width: 80%;
+      min-width: 80%;
     }
   }
   
