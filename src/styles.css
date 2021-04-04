@@ -156,3 +156,7 @@ input {
   width: 50%;
 }
 
+
+.button-container {
+  text-align: right;
+}
