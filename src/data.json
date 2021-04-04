@@ -58,26 +58,32 @@
   "sides": [
     {
       "name": "Fries",
+      "description": "Pataes coupées et frites",
       "price": "5"
     },
     {
       "name": "Onion Rings",
+      "description": "Oignons frits",
       "price": "4"
     },
     {
       "name": "Has Brown",
+      "description": "Pataes écrasées et frites",
       "price": "3"
     },
     {
       "name": "Chicken Nuggets",
+      "description": "poussins panés",
       "price": "4"
     },
     {
       "name": "Salad",
+      "description": "Laitue",
       "price": "6"
     },
     {
       "name": "Coleslaw",
+      "description": "Salade de choux",
       "price": "5"
     }
   ],
@@ -85,31 +91,37 @@
     {
       "name": "Soft Drink",
       "price": "4",
+      "description": "Boisson pour frileu",
       "category": "drink"
     },
     {
-      "name": "Orange Juice",
+      "name": "Rhum Damoiseau",
       "price": "5",
+      "description": "Nectar des Dieux",
       "category": "drink"
     },
     {
       "name": "Iced Tea",
       "price": "4",
+      "description": "Thé vraiment glacé",
       "category": "drink"
     },
     {
       "name": "Coffee",
       "price": "6",
+      "description": "Jus de chaussettes",
       "category": "drink"
     },
     {
       "name": "Smoothie",
       "price": "4",
+      "description": "Recette du jour: chocolat banane",
       "category": "drink"
     },
     {
       "name": "Water",
       "price": "2",
+      "description": "Robinet, daté de 2019 il s'agit d'un très grand cru",
       "category": "drink"
     }
   ]

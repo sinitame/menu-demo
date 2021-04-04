@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import Logo from "./components/Logo";
 import Mains from "./components/Mains";
-import Extras from "./components/Extras";
 import {Provider} from "./Context";
 import {deserts, drinks, mains, starters, sides} from "./data";
 import MediaCard from "./components/Card";
 import {Modal} from "./components/Modal";
 
 import "./styles.css";
+import ExtrasSection from "./components/ExtrasSection";
 
 function Menu({clickHandler}) {
   return (
@@ -15,14 +15,14 @@ function Menu({clickHandler}) {
       <div className="menu">
         <Logo />
         <div className="right">
-          <Mains meals={mains} clickHandler={clickHandler}/>
+          <Mains type="starters" meals={starters} clickHandler={clickHandler}/>
           <Mains type="Main" meals={mains}/>
           <Mains type="Desserts" meals={deserts}/>
         </div>
         <div className="left">
           <aside className="aside">
-            <Extras type="Sides" items={sides}/>
-            <Extras type="Drinks" items={drinks}/>
+            <ExtrasSection type="Sides" extras={sides} clickHandler={clickHandler}/>
+            <ExtrasSection type="Drinks" extras={drinks} clickHandler={clickHandler}/>
           </aside>
         </div>
       </div>
