@@ -7,7 +7,7 @@ import MediaCard from "./components/Card";
 import {Modal} from "./components/Modal";
 
 import "./styles.css";
-import ExtrasSection from "./components/ExtrasSection";
+import ExtraSection from "./components/ExtraSection";
 
 function Menu({clickHandler}) {
   return (
@@ -21,8 +21,8 @@ function Menu({clickHandler}) {
         </div>
         <div className="left">
           <aside className="aside">
-            <ExtrasSection type="Sides" extras={sides} clickHandler={clickHandler}/>
-            <ExtrasSection type="Drinks" extras={drinks} clickHandler={clickHandler}/>
+            <ExtraSection type="Sides" extras={sides} clickHandler={clickHandler}/>
+            <ExtraSection type="Drinks" extras={drinks} clickHandler={clickHandler}/>
           </aside>
         </div>
       </div>
