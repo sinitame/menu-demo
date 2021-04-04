@@ -1,8 +1,8 @@
-import React, { Component } from "react";
+import React, {Component} from "react";
 import Logo from "./components/Logo";
 import Mains from "./components/Mains";
 import {Provider} from "./Context";
-import {deserts, drinks, mains, starters, sides} from "./data";
+import {drinks, starters, deserts, mains, sides} from "./data";
 import MediaCard from "./components/Card";
 import {Modal} from "./components/Modal";
 
@@ -15,7 +15,7 @@ function Menu({clickHandler}) {
       <div className="menu">
         <Logo />
         <div className="right">
-          <Mains type="starters" meals={starters} clickHandler={clickHandler}/>
+          <Mains type="Starters" meals={starters} clickHandler={clickHandler}/>
           <Mains type="Main" meals={mains} clickHandler={clickHandler}/>
           <Mains type="Desserts" meals={deserts} clickHandler={clickHandler}/>
         </div>
@@ -35,6 +35,7 @@ class App extends Component {
     super();
     this.state = {
       show: false,
+      img: "",
       name: "",
       description: "",
     };
@@ -42,22 +43,24 @@ class App extends Component {
     this.hideModal = this.hideModal.bind(this);
   }
 
-  showModal = (name, description) => {
-    this.setState({ show: true, name, description });
+  showModal = (img, name, description) => {
+    this.setState({show: true, img, name, description});
   };
 
   hideModal = () => {
-    this.setState({ show: false });
+    this.setState({show: false});
   };
 
   render() {
     return (
-      <div>
-        <Modal show={this.state.show}>
-          <MediaCard handleClose={this.hideModal} name={this.state.name} description={this.state.description}/>
-        </Modal>
-        <Menu clickHandler={this.showModal}/>
-      </div>
+        <div>
+          <Modal show={this.state.show} bg_img_path={this.state.img}>
+            <MediaCard handleClose={this.hideModal} img_path={this.state.img}
+                       name={this.state.name}
+                       description={this.state.description}/>
+          </Modal>
+          <Menu clickHandler={this.showModal}/>
+        </div>
 
     );
   }

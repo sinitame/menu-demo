@@ -1,49 +1,35 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import Card from '@material-ui/core/Card';
-import CardActionArea from '@material-ui/core/CardActionArea';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
-import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
 
-const useStyles = makeStyles({
-  root: {
-    maxWidth: 345,
-    zIndex: 10,
-    position: "absolute",
-  },
-  media: {
-    height: 140,
-  },
-});
+import "../modal.css";
+import Button from "./Button";
+import {ButtonSizes, ButtonTypes} from "./buttonTypes";
 
-export default function MediaCard({name, description, handleClose}) {
-  const classes = useStyles();
-
+export default function MediaCard({img_path, name, description, handleClose}) {
+  console.log(img_path)
   return (
-    <Card className={classes.root}>
-      <CardActionArea>
-        <CardMedia
-          className={classes.media}
-          image="/static/images/cards/contemplative-reptile.jpg"
-          title="Contemplative Reptile"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
+      <div className="modal-main">
+        <div className="modal-media">
+          <div className="modal-media-inner">
+            <img alt={name} src={img_path} className="modal-image"></img>
+          </div>
+        </div>
+        <div className="modal-content">
+          <h2>
             {name}
-          </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
+          </h2>
+          <hr className="hr-modal"></hr>
+          <p>
             {description}
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-      <CardActions>
-        <Button size="small" color="primary" onClick={handleClose}>
-          Close
-        </Button>
-      </CardActions>
-    </Card>
+          </p>
+          <div className="button-container">
+            <Button
+                size={ButtonSizes.SMALL}
+                label="Close"
+                onClickHandler={handleClose}
+                type={ButtonTypes.SECONDARY}
+            />
+          </div>
+        </div>
+      </div>
   );
 }

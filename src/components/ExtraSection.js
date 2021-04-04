@@ -7,7 +7,8 @@ export default function ExtraSection({type, extras, clickHandler}) {
         {extras.map((extra, index) => (
             <div className="item-container">
               <article
-                  onClick={() => clickHandler(extra.name, extra.description)}
+                  onClick={() => clickHandler(extra.img, extra.name,
+                      extra.description)}
                   className="menu-item" key={index}>
                 <div className="extras-name">{extra.name}</div>
                 <strong className="extras-price">${extra.price}</strong>
