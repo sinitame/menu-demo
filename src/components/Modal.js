@@ -6,9 +6,8 @@ export const Modal = ({ show, children }) => {
 
   return (
     <div className={showHideClassName}>
-        <section className="modal-main">
-            {children}
-        </section>
+        <div class="bg-image"></div>
+        {children}
     </div>
   );
 };

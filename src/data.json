@@ -1,31 +1,37 @@
 {
   "mains": [
     {
+      "img": "",
       "name": "The Caesar",
       "description": "Crisp romaine lettuce tossed with our homemade Caesar dressing, croutons, and shredded parmesan cheese.",
       "price": "19"
     },
     {
+      "img": "",
       "name": "Surf & Turf",
       "description": "A grilled, queen-cut ribeye served with shrimp and scallop alfredo.",
       "price": "17"
     },
     {
+      "img": "",
       "name": "Creamy Sage",
       "description": "Chicken breast sautéed with fresh sage and prosciutto. Served atop creamy asiago linguini.",
       "price": "21"
     },
     {
+      "img": "",
       "name": "From the Sea",
       "description": "Fresh haddock, gulf shrimp, and sea scallops dipped in beer batter and fried to a golden brown.",
       "price": "23"
     },
     {
+      "img": "",
       "name": "BB's Tenderloin",
       "description": "Tenderloin tips, sautéed with bacon and mushrooms and finished with a bourbon-BBQ sauce.",
       "price": "18"
     },
     {
+      "img": "",
       "name": "Chicken Marsala",
       "description": "Boneless chicken breast sautéed with mushrooms and finished in a marsala and cream reduction.",
       "price": "22"
@@ -33,57 +39,69 @@
   ],
   "sides": [
     {
+      "img": "",
       "name": "Fries",
       "price": "5"
     },
     {
+      "img": "",
       "name": "Onion Rings",
       "price": "4"
     },
     {
+      "img": "",
       "name": "Has Brown",
       "price": "3"
     },
     {
+      "img": "",
       "name": "Chicken Nuggets",
       "price": "4"
     },
     {
+      "img": "",
       "name": "Salad",
       "price": "6"
     },
     {
+      "img": "",
       "name": "Coleslaw",
       "price": "5"
     }
   ],
   "drinks": [
     {
+      "img": "",
       "name": "Soft Drink",
       "price": "4",
       "category": "drink"
     },
     {
+      "img": "",
       "name": "Orange Juice",
       "price": "5",
       "category": "drink"
     },
     {
+      "img": "",
       "name": "Iced Tea",
       "price": "4",
       "category": "drink"
     },
     {
+      "img": "",
       "name": "Coffee",
       "price": "6",
       "category": "drink"
     },
     {
+      "img": "",
       "name": "Smoothie",
       "price": "4",
       "category": "drink"
     },
     {
+      "img": "",
       "name": "Water",
       "price": "2",
       "category": "drink"

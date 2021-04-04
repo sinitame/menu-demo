@@ -29,6 +29,7 @@ class App extends Component {
     super();
     this.state = {
       show: false,
+      img: "",
       name: "",
       description: "",
     };
@@ -36,8 +37,8 @@ class App extends Component {
     this.hideModal = this.hideModal.bind(this);
   }
 
-  showModal = (name, description) => {
-    this.setState({ show: true, name, description });
+  showModal = (img, name, description) => {
+    this.setState({ show: true, img,  name, description });
   };
 
   hideModal = () => {
@@ -48,7 +49,7 @@ class App extends Component {
     return (
       <div>
         <Modal show={this.state.show}>
-          <MediaCard handleClose={this.hideModal} name={this.state.name} description={this.state.description}/>
+          <MediaCard handleClose={this.hideModal} img={this.state.img} name={this.state.name} description={this.state.description}/>
         </Modal>
         <Menu clickHandler={this.showModal}/>
       </div>

@@ -8,27 +8,25 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
+import "../modal.css";
+import img from "../assets/default-meal.jpg"
+
 const useStyles = makeStyles({
-  root: {
-    maxWidth: 345,
-    zIndex: 10,
-    position: "absolute",
-  },
   media: {
-    height: 140,
+    height: 300,
   },
 });
 
-export default function MediaCard({name, description, handleClose}) {
+export default function MediaCard({img_path, name, description, handleClose}) {
   const classes = useStyles();
 
   return (
-    <Card className={classes.root}>
+    <Card className="modal-main">
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image="/static/images/cards/contemplative-reptile.jpg"
-          title="Contemplative Reptile"
+          image={img}
+          title={name}
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
