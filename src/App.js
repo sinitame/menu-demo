@@ -16,8 +16,8 @@ function Menu({clickHandler}) {
         <Logo />
         <div className="right">
           <Mains type="starters" meals={starters} clickHandler={clickHandler}/>
-          <Mains type="Main" meals={mains}/>
-          <Mains type="Desserts" meals={deserts}/>
+          <Mains type="Main" meals={mains} clickHandler={clickHandler}/>
+          <Mains type="Desserts" meals={deserts} clickHandler={clickHandler}/>
         </div>
         <div className="left">
           <aside className="aside">
