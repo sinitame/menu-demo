@@ -92,6 +92,7 @@ input {
 
 .aside {
   grid-column: 2 / 3;
+  background-color: #c0c0c0;
 }
 
 .extras {

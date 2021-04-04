@@ -2,33 +2,33 @@
   "mains": [
     {
       "name": "The Caesar",
-      "description": "Crisp romaine lettuce tossed with our homemade Caesar dressing, croutons, and shredded parmesan cheese.",
+      "description": "Sauté de chien à la sauce béchamel.",
       "price": "19"
     },
     {
-      "name": "Surf & Turf",
-      "description": "A grilled, queen-cut ribeye served with shrimp and scallop alfredo.",
+      "name": "Surf & Turd",
+      "description": "Merde de mouton grillée au pesto",
       "price": "17"
     },
     {
-      "name": "Creamy Sage",
-      "description": "Chicken breast sautéed with fresh sage and prosciutto. Served atop creamy asiago linguini.",
+      "name": "Chicken Marsala",
+      "description": "Boneless chicken breast sautéed with mushrooms and finished in a marsala and cream reduction.",
+      "price": "22"
+    },
+    {
+      "name": "Creamy bucket",
+      "description": "Soupe d'anolies revisitée à la tahitienne",
       "price": "21"
     },
     {
       "name": "From the Sea",
-      "description": "Fresh haddock, gulf shrimp, and sea scallops dipped in beer batter and fried to a golden brown.",
+      "description": "Caca de crevettes frit",
       "price": "23"
     },
     {
       "name": "BB's Tenderloin",
       "description": "Tenderloin tips, sautéed with bacon and mushrooms and finished with a bourbon-BBQ sauce.",
       "price": "18"
-    },
-    {
-      "name": "Chicken Marsala",
-      "description": "Boneless chicken breast sautéed with mushrooms and finished in a marsala and cream reduction.",
-      "price": "22"
     }
   ],
   "starters": [
