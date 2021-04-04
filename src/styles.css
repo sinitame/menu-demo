@@ -149,3 +149,7 @@ input {
 .total-price {
   font-size: 1.5rem;
 }
+
+.button-container {
+  text-align: right;
+}

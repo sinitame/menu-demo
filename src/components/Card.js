@@ -1,11 +1,13 @@
 import React from 'react';
 
 import "../modal.css";
+import Button from "./Button";
+import {ButtonSizes, ButtonTypes} from "./buttonTypes";
 
 export default function MediaCard({img_path, name, description, handleClose}) {
   console.log(img_path)
   return (
-    <div className="modal-main">
+      <div className="modal-main">
         <div className="modal-media">
           <div className="modal-media-inner">
             <img alt={name} src={img_path} className="modal-image"></img>
@@ -18,10 +20,15 @@ export default function MediaCard({img_path, name, description, handleClose}) {
           <p>
             {description}
           </p>
-          <button size="small" color="primary" onClick={handleClose}>
-          Close
-        </button>
+          <div className="button-container">
+            <Button
+                size={ButtonSizes.SMALL}
+                label="Close"
+                onClickHandler={handleClose}
+                type={ButtonTypes.SECONDARY}
+            />
+          </div>
         </div>
-    </div>
+      </div>
   );
 }
