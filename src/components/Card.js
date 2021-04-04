@@ -19,13 +19,12 @@ const useStyles = makeStyles({
 export default function MediaCard({img_path, name, description, handleClose}) {
   const classes = useStyles();
   console.log(img_path)
-  let img = require('/src/assets/default-meal.jpg')
   return (
     <Card className="modal-main">
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image={img}
+          image={img_path}
           title={name}
         />
         <CardContent>

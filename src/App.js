@@ -48,7 +48,7 @@ class App extends Component {
   render() {
     return (
         <div>
-          <Modal show={this.state.show}>
+          <Modal show={this.state.show} bg_img_path={this.state.img}>
             <MediaCard handleClose={this.hideModal} img_path={this.state.img}
                        name={this.state.name}
                        description={this.state.description}/>
