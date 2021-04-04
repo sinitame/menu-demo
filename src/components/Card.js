@@ -17,6 +17,7 @@ export default function MediaCard({img_path, name, description, handleClose}) {
           <h2>
             {name}
           </h2>
+          <hr className="hr-modal"></hr>
           <p>
             {description}
           </p>
