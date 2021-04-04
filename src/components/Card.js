@@ -9,7 +9,6 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
 import "../modal.css";
-import img from "../assets/default-meal.jpg"
 
 const useStyles = makeStyles({
   media: {
@@ -19,7 +18,8 @@ const useStyles = makeStyles({
 
 export default function MediaCard({img_path, name, description, handleClose}) {
   const classes = useStyles();
-
+  console.log(img_path)
+  let img = require('/src/assets/default-meal.jpg')
   return (
     <Card className="modal-main">
       <CardActionArea>
