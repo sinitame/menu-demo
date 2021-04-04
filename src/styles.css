@@ -161,10 +161,10 @@ input {
   transition: box-shadow .3s;
   width: 100%;
   height: auto;
-  margin: 7px;
+  padding: 10px;
   border-radius:10px;
 }
 .item-container:hover {
-           box-shadow: 0 0 11px rgba(33,33,33,.2);
-         }
+  box-shadow: 0 0 11px rgba(33,33,33,.2);
+}
 
