@@ -2,7 +2,7 @@ import React, {Component} from "react";
 import Logo from "./components/Logo";
 import Mains from "./components/Mains";
 import {Provider} from "./Context";
-import {drinks, mains, sides} from "./data";
+import {drinks, starters, deserts, mains, sides} from "./data";
 import MediaCard from "./components/Card";
 import {Modal} from "./components/Modal";
 
@@ -15,9 +15,9 @@ function Menu({clickHandler}) {
       <div className="menu">
         <Logo />
         <div className="right">
-          <Mains type="starters" meals={starters} clickHandler={clickHandler}/>
-          <Mains type="Main" meals={mains}/>
-          <Mains type="Desserts" meals={deserts}/>
+          <Mains type="Starters" meals={starters} clickHandler={clickHandler}/>
+          <Mains type="Main" meals={mains} clickHandler={clickHandler}/>
+          <Mains type="Desserts" meals={deserts} clickHandler={clickHandler}/>
         </div>
         <div className="left">
           <aside className="aside">

@@ -1,4 +1,32 @@
 {
+  "starters": [
+    {
+      "img": "assets/default-meal.jpg",
+      "name": "Entree 1",
+      "description": "Crisp romaine lettuce tossed with our homemade Caesar dressing, croutons, and shredded parmesan cheese.",
+      "price": "19"
+    },
+    {
+      "img": "assets/img-1.jpg",
+      "name": "Entree 2",
+      "description": "A grilled, queen-cut ribeye served with shrimp and scallop alfredo.",
+      "price": "17"
+    }
+  ],
+  "deserts": [
+    {
+      "img": "assets/default-meal.jpg",
+      "name": "Dessert 1",
+      "description": "Crisp romaine lettuce tossed with our homemade Caesar dressing, croutons, and shredded parmesan cheese.",
+      "price": "19"
+    },
+    {
+      "img": "assets/img-1.jpg",
+      "name": "Dessert 2",
+      "description": "A grilled, queen-cut ribeye served with shrimp and scallop alfredo.",
+      "price": "17"
+    }
+  ],
   "mains": [
     {
       "img": "assets/default-meal.jpg",
