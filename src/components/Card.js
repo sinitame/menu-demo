@@ -1,46 +1,27 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import Card from '@material-ui/core/Card';
-import CardActionArea from '@material-ui/core/CardActionArea';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
-import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
 
 import "../modal.css";
 
-const useStyles = makeStyles({
-  media: {
-    height: 300,
-  },
-});
-
 export default function MediaCard({img_path, name, description, handleClose}) {
-  const classes = useStyles();
   console.log(img_path)
   return (
-    <Card className="modal-main">
-      <CardActionArea>
-        <CardMedia
-          className={classes.media}
-          image={img_path}
-          title={name}
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
+    <div className="modal-main">
+        <div className="modal-media">
+          <div className="modal-media-inner">
+            <img alt={name} src={img_path} className="modal-image"></img>
+          </div>
+        </div>
+        <div className="modal-content">
+          <h2>
             {name}
-          </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
+          </h2>
+          <p>
             {description}
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-      <CardActions>
-        <Button size="small" color="primary" onClick={handleClose}>
+          </p>
+          <button size="small" color="primary" onClick={handleClose}>
           Close
-        </Button>
-      </CardActions>
-    </Card>
+        </button>
+        </div>
+    </div>
   );
 }
