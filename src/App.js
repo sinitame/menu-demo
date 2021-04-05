@@ -1,26 +1,32 @@
 import React, {Component} from "react";
 import Logo from "./components/Logo";
 import Mains from "./components/Mains";
-import Extras from "./components/Extras";
 import {Provider} from "./Context";
-import {drinks, mains, sides} from "./data";
+import {drinks, starters, deserts, mains, sides} from "./data";
 import MediaCard from "./components/Card";
 import {Modal} from "./components/Modal";
 
 import "./styles.css";
+import ExtraSection from "./components/ExtraSection";
 
 function Menu({clickHandler}) {
   return (
-      <Provider>
-        <div className="menu">
-          <Logo/>
-          <Mains meals={mains} clickHandler={clickHandler}/>
+    <Provider>
+      <div className="menu">
+        <Logo />
+        <div className="right">
+          <Mains type="Starters" meals={starters} clickHandler={clickHandler}/>
+          <Mains type="Main" meals={mains} clickHandler={clickHandler}/>
+          <Mains type="Desserts" meals={deserts} clickHandler={clickHandler}/>
+        </div>
+        <div className="left">
           <aside className="aside">
-            <Extras type="Sides" items={sides}/>
-            <Extras type="Drinks" items={drinks}/>
+            <ExtraSection type="Sides" extras={sides} clickHandler={clickHandler}/>
+            <ExtraSection type="Drinks" extras={drinks} clickHandler={clickHandler}/>
           </aside>
         </div>
-      </Provider>
+      </div>
+    </Provider>
   );
 }
 
