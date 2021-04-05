@@ -163,10 +163,19 @@ input {
   padding: 10px;
   border-radius:10px;
 }
-.item-container:hover, .item-container:active{
+
+.item-container:hover {
   box-shadow: 0 0 11px rgba(33,33,33,.2);
 }
 
+.item-container {
+  transition: all 0.2s;
+  transition-delay: 300ms;
+}
+
+.item-container:active {
+  transition: none;
+}
 
 .button-container {
   text-align: right;
