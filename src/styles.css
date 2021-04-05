@@ -116,6 +116,7 @@ input {
 .extras-heading {
   margin: 0 0 1.5rem;
   border-bottom: 1px solid var(--secondary);
+  color: var(--primary);
 }
 
 .extras-name {

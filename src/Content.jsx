@@ -5,6 +5,13 @@ import ExtraSection from "./components/ExtraSection.jsx";
 
 export default function Content({data_path, clickHandler}) {
   let data = require(`./data/${data_path}/data.json`)
+
+  // Set menu colors from config
+  let config = require(`./data/${data_path}/config.json`)
+  document.documentElement.style.setProperty('--primary',config.primaryColor)
+  document.documentElement.style.setProperty('--secondary',config.secondaryColor)
+  document.documentElement.style.setProperty('--light',config.lightColor)
+
   return (
       <div className="menu">
         <Logo/>
