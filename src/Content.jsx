@@ -1,7 +1,7 @@
 import React from "react";
-import Logo from "./components/Logo";
-import Mains from "./components/MainsSection";
-import ExtraSection from "./components/ExtraSection";
+import Logo from "./components/Logo.jsx";
+import Mains from "./components/MainsSection.jsx";
+import ExtraSection from "./components/ExtraSection.jsx";
 
 export default function Content({data_path, clickHandler}) {
   let data = require(`./data/${data_path}/data.json`)

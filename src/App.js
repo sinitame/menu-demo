@@ -1,11 +1,11 @@
 import React, {Component} from "react";
-import {Provider} from "./Context";
-import MediaCard from "./components/Card";
-import {Modal} from "./components/Modal";
+import {Provider} from "./Context.jsx";
+import MediaCard from "./components/Card.jsx";
+import {Modal} from "./components/Modal.jsx";
 import "./styles.css";
-import Content from "./Content";
+import Content from "./Content.jsx";
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
-import Home from "./Home";
+import Home from "./Home.jsx";
 
 function Menu({clickHandler}) {
   return (
