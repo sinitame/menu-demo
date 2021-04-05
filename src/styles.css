@@ -173,8 +173,12 @@ input {
   transition-delay: 300ms;
 }
 
+.item-container:active {
+  background-color: #0039A8;
+}
+
 .item-container:focus {
-  transition: none;
+  background-color: #0F52C1;
 }
 
 .button-container {
