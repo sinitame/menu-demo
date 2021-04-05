@@ -1,13 +1,13 @@
 import React, {Component} from "react";
 import Logo from "./components/Logo";
-import Mains from "./components/Mains";
-import {Provider} from "./Context";
-import {drinks, starters, deserts, mains, sides} from "./data";
+import Mains from "./components/MainsSection";
+import ExtraSection from "./components/ExtraSection";
 import MediaCard from "./components/Card";
 import {Modal} from "./components/Modal";
+import {Provider} from "./Context";
+import {drinks, starters, deserts, mains, sides} from "./data";
 
 import "./styles.css";
-import ExtraSection from "./components/ExtraSection";
 
 function Menu({clickHandler}) {
   return (

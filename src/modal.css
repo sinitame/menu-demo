@@ -23,11 +23,9 @@
 }
 
 .modal-image {
-  max-width: 100%;
-  display: block;
-  max-height: 100%;
-  height: 300;
   width: 100%;
+  display: block;
+  height: 280px;
   object-fit: cover;
   border-radius: 10px;
   box-shadow: 0 10px 30px -10px rgba(66, 66, 66, 0.4);
@@ -79,6 +77,42 @@
   display: none;
 }
 
+.modal-button {
+  --color-primary-light: #030086;
+  --color-secondary-light: #0804b8;
+  --color-white: #fff;
+  --font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
+  sans-serif, Apple Color Emoji, Segoe UI Emoji;
+
+  font-family: var(--font-family);
+  font-size: 16px;
+  padding: 10px 60px;
+  border-radius: 10px;
+  margin: 10px 0px;
+  cursor: pointer;
+  transition: background-color 0.1s linear, color 0.1s linear,
+  border 0.1s linear, outline 0.1s linear;
+
+
+  /* Button Size */
+  padding: 8px 30px;
+  font-size: 0.8rem;
+
+  /* Button Colors */
+  color: var(--color-primary-light);
+  border: 2px solid var(--color-primary-light);
+  background: none;
+}
+
+.modal-button:hover, .modal-button:focus {
+  color: var(--color-white);
+  background-color:var(--color-secondary-light)
+}
+
+.modal-button-container {
+  text-align: right;
+}
+
 @media only screen and (max-width: 750px) {
   .modal-main {
     min-width: 80%;
@@ -99,6 +133,10 @@
     padding: 25px;
     padding-top: 80px;
   }
+
+  .modal-image {
+    height: 180px;
+  }
 }
 
 @media screen and (max-width: 360px) {
@@ -114,5 +152,9 @@
   }
   .modal-media {
     margin-bottom: -120px;
+  }
+
+  .modal-image {
+    height: 150px;
   }
 }
