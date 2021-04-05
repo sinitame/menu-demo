@@ -1,3 +1,9 @@
+:root {
+  --primary: #312951;
+  --secondary: #473d72;
+  --light: #fafafd;
+}
+
 .modal {
   background-color: white;
   position: fixed;
@@ -99,14 +105,14 @@
   font-size: 0.8rem;
 
   /* Button Colors */
-  color: var(--color-primary-light);
-  border: 2px solid var(--color-primary-light);
+  color: var(--primary);
+  border: 2px solid var(--primary);
   background: none;
 }
 
 .modal-button:hover, .modal-button:focus {
-  color: var(--color-white);
-  background-color:var(--color-secondary-light)
+  color: var(--light);
+  background-color:var(--secondary)
 }
 
 .modal-button-container {

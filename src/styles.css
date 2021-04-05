@@ -114,6 +114,7 @@ input {
 }
 
 .extras-heading {
+  color: var(--primary);
   margin: 0 0 1.5rem;
   border-bottom: 1px solid var(--secondary);
 }
@@ -163,11 +164,7 @@ input {
   padding: 10px;
   border-radius:10px;
 }
-.item-container:hover, .item-container:active{
+
+.item-container:hover, .item-container:focus{
   box-shadow: 0 0 11px rgba(33,33,33,.2);
-}
-
-
-.button-container {
-  text-align: right;
 }
