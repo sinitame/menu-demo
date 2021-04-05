@@ -173,7 +173,7 @@ input {
   transition-delay: 300ms;
 }
 
-.item-container:active {
+.item-container:focus {
   transition: none;
 }
 
