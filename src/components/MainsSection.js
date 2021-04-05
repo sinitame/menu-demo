@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Mains({meals, type, clickHandler}) {
+export default function MainSection({meals, type, clickHandler}) {
   return (
       <section className="mains">
         <h2 className="extras-heading">{type}</h2>
