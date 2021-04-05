@@ -3,7 +3,7 @@ name: Deployment
 on:
   push:
     branches:
-      - ci/deployment-on-s3
+      - main
 
 jobs:
   buildAndDeploy:
