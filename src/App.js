@@ -1,34 +1,28 @@
 import React, {Component} from "react";
-import Logo from "./components/Logo";
-import Mains from "./components/MainsSection";
+import {Provider} from "./Context";
 import MediaCard from "./components/Card";
 import {Modal} from "./components/Modal";
-import {Provider} from "./Context";
-import {deserts, drinks, mains, sides, starters} from "./data";
-
 import "./styles.css";
-import ExtraSection from "./components/ExtraSection";
+import Content from "./Content";
+import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import Home from "./Home";
 
 function Menu({clickHandler}) {
   return (
       <Provider>
-        <div className="menu">
-          <Logo/>
-          <div className="right">
-            <Mains type="Starters" meals={starters}
-                   clickHandler={clickHandler}/>
-            <Mains type="Main" meals={mains} clickHandler={clickHandler}/>
-            <Mains type="Desserts" meals={deserts} clickHandler={clickHandler}/>
-          </div>
-          <div className="left">
-            <aside className="aside">
-              <ExtraSection type="Sides" extras={sides}
-                            clickHandler={clickHandler}/>
-              <ExtraSection type="Drinks" extras={drinks}
-                            clickHandler={clickHandler}/>
-            </aside>
-          </div>
-        </div>
+        <Router>
+          <Switch>
+            <Route path="/" exact component={() => <Home/>}/>
+            <Route path="/the-moonrise-dinner"
+                   exact component={() =>
+                <Content data_path="the-moonrise-dinner"
+                         clickHandler={clickHandler}/>}/>
+            <Route path="/another-dinner"
+                   exact component={() =>
+                <Content data_path="another-dinner"
+                         clickHandler={clickHandler}/>}/>
+          </Switch>
+        </Router>
       </Provider>
   );
 }

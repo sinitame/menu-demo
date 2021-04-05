@@ -1,0 +1,138 @@
+{
+  "starters": [
+    {
+      "img": "assets/the-moonrise-dinner/default-meal.jpg",
+      "name": "Entree 1",
+      "description": "Crisp romaine lettuce tossed with our homemade Caesar dressing, croutons, and shredded parmesan cheese.",
+      "price": "19"
+    },
+    {
+      "img": "assets/the-moonrise-dinner/img-1.jpg",
+      "name": "Entree 2",
+      "description": "A grilled, queen-cut ribeye served with shrimp and scallop alfredo.",
+      "price": "17"
+    }
+  ],
+  "deserts": [
+    {
+      "img": "assets/the-moonrise-dinner/default-meal.jpg",
+      "name": "Dessert 1",
+      "description": "Crisp romaine lettuce tossed with our homemade Caesar dressing, croutons, and shredded parmesan cheese.",
+      "price": "19"
+    },
+    {
+      "img": "assets/the-moonrise-dinner/img-1.jpg",
+      "name": "Dessert 2",
+      "description": "A grilled, queen-cut ribeye served with shrimp and scallop alfredo.",
+      "price": "17"
+    }
+  ],
+  "mains": [
+    {
+      "img": "assets/the-moonrise-dinner/default-meal.jpg",
+      "name": "The Caesar",
+      "description": "Crisp romaine lettuce tossed with our homemade Caesar dressing, croutons, and shredded parmesan cheese.",
+      "price": "19"
+    },
+    {
+      "img": "assets/the-moonrise-dinner/img-1.jpg",
+      "name": "Surf & Turf",
+      "description": "A grilled, queen-cut ribeye served with shrimp and scallop alfredo.",
+      "price": "17"
+    },
+    {
+      "img": "assets/the-moonrise-dinner/default-meal.jpg",
+      "name": "Creamy Sage",
+      "description": "Chicken breast sautéed with fresh sage and prosciutto. Served atop creamy asiago linguini.",
+      "price": "21"
+    },
+    {
+      "img": "assets/the-moonrise-dinner/default-meal.jpg",
+      "name": "From the Sea",
+      "description": "Fresh haddock, gulf shrimp, and sea scallops dipped in beer batter and fried to a golden brown.",
+      "price": "23"
+    },
+    {
+      "img": "assets/the-moonrise-dinner/default-meal.jpg",
+      "name": "Poulet Makkhani",
+      "description": "Poulet au beurre (plat signature). Mélange riche et crémeux de tomates, de beurre, de curry et d'épices avec une viande tendre.",
+      "price": "18"
+    },
+    {
+      "img": "assets/the-moonrise-dinner/default-meal.jpg",
+      "name": "Chicken Marsala",
+      "description": "Boneless chicken breast sautéed with mushrooms and finished in a marsala and cream reduction.",
+      "price": "22"
+    }
+  ],
+  "sides": [
+    {
+      "img": "assets/the-moonrise-dinner/default-meal.jpg",
+      "name": "Fries",
+      "price": "5"
+    },
+    {
+      "img": "assets/the-moonrise-dinner/default-meal.jpg",
+      "name": "Onion Rings",
+      "price": "4"
+    },
+    {
+      "img": "assets/the-moonrise-dinner/default-meal.jpg",
+      "name": "Has Brown",
+      "price": "3"
+    },
+    {
+      "img": "assets/the-moonrise-dinner/default-meal.jpg",
+      "name": "Chicken Nuggets",
+      "price": "4"
+    },
+    {
+      "img": "assets/the-moonrise-dinner/default-meal.jpg",
+      "name": "Salad",
+      "price": "6"
+    },
+    {
+      "img": "assets/the-moonrise-dinner/default-meal.jpg",
+      "name": "Coleslaw",
+      "price": "5"
+    }
+  ],
+  "drinks": [
+    {
+      "img": "assets/the-moonrise-dinner/default-meal.jpg",
+      "name": "Soft Drink",
+      "price": "4",
+      "category": "drink"
+    },
+    {
+      "img": "assets/the-moonrise-dinner/default-meal.jpg",
+      "name": "Orange Juice",
+      "price": "5",
+      "category": "drink"
+    },
+    {
+      "img": "assets/the-moonrise-dinner/default-meal.jpg",
+      "name": "Iced Tea",
+      "price": "4",
+      "category": "drink"
+    },
+    {
+      "img": "assets/the-moonrise-dinner/default-meal.jpg",
+      "name": "Coffee",
+      "price": "6",
+      "category": "drink"
+    },
+    {
+      "img": "assets/the-moonrise-dinner/default-meal.jpg",
+      "name": "Smoothie",
+      "price": "4",
+      "category": "drink"
+    },
+    {
+      "img": "assets/the-moonrise-dinner/default-meal.jpg",
+      "name": "Water",
+      "price": "2",
+      "category": "drink"
+    }
+  ]
+}
