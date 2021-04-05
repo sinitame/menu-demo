@@ -20,7 +20,7 @@ export default function MediaCard({img_path, name, description, handleClose}) {
             {description}
           </p>
           <div className="modal-button-container">
-            <button className="modal-button" onClick={handleClose}> Close </button>
+            <button className="modal-button" onClick={handleClose}> Fermer </button>
           </div>
         </div>
       </div>
