@@ -1,0 +1,26 @@
+{
+  "Header": {
+    "title": "FoodWI, par datawi",
+    "paragraph": "Le partenaire des restaurateurs antillais. Un concept par Datawi."
+  },
+  "Contact": {
+    "address": "4321 California St, San Francisco, CA 12345 ",
+    "phone": "+1 123 456 1234",
+    "email": "info@company.com",
+    "linkedin": "fb.com",
+    "twitter": "twitter.com",
+    "instagram": "youtube.com"
+  },
+  "Clients": [
+    {
+      "name": "The moonrise dinner",
+      "path": "/the-moonrise-dinner",
+      "preview": "assets/the-moonrise-dinner/preview.jpg"
+    },
+    {
+      "name": "Another dinner",
+      "path": "/another-dinner",
+      "preview": "assets/another-dinner/preview.jpg"
+    }
+  ]
+}

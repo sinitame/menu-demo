@@ -1,5 +1,5 @@
 :root {
-  --primary: #312951;
+  --primary: white;
   --secondary: #473d72;
   --light: #fafafd;
 }
@@ -184,4 +184,8 @@ input {
 
 .button-container {
   text-align: right;
+}
+
+.App-header {
+  background-color: white;
 }
