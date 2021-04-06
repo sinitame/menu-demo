@@ -21,7 +21,7 @@ const Home = () => {
       <div className="home">
         <Navigation/>
         <Header data={landingPageData.Header}/>
-        <Gallery/>
+        <Gallery data={JsonData.Clients}/>
         <Contact data={landingPageData.Contact}/>
       </div>
   );

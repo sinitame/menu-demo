@@ -3,7 +3,6 @@ import React from 'react';
 import "../modal.css";
 
 export default function MediaCard({img_path, name, description, handleClose}) {
-  console.log(img_path)
   return (
       <div className="modal-main">
         <div className="modal-media">
