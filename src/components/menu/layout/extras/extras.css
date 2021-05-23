@@ -1,0 +1,29 @@
+.extras {
+    color: var(--secondary);
+}
+
+.extras + .extras {
+    margin-top: 1.5rem;
+}
+
+@media (min-width: 660px) {
+    .extras + .extras {
+        margin-top: 2.5rem;
+    }
+}
+
+.extras .menu-item {
+    margin-bottom: 0.75rem;
+}
+
+.extras-heading {
+    margin: 0 0 1.5rem;
+    border-bottom: 1px solid var(--secondary);
+    color: var(--primary);
+}
+
+.extras-name {
+    flex-grow: 1;
+}
+  
+  

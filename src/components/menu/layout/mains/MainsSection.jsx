@@ -1,5 +1,8 @@
 import React from "react";
 
+import './mains.css';
+import '../menu-layout.css';
+
 export default function MainSection({meals, type, clickHandler}) {
   return (
       <section className="mains">

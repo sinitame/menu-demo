@@ -1,6 +1,9 @@
 import React from "react";
 
-export default function ExtraSection({type, extras, clickHandler}) {
+import './extras.css';
+import '../menu-layout.css';
+
+export default function ExtrasSection({type, extras, clickHandler}) {
   return (
       <section className="extras">
         <h2 className="extras-heading">{type}</h2>
