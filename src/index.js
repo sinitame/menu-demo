@@ -3,14 +3,12 @@ import ReactDOM from "react-dom";
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 
 import Menu from "./components/menu/Menu";
-import Landing from "./components/landing/Landing";
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(
   <React.StrictMode>
     <Router>
       <Switch>
-        <Route path="/" exact component={() => <Landing/>}/>
         <Route path="/the-moonrise-dinner"
           exact component={() => <Menu data_path="the-moonrise-dinner"/>}
         />
