@@ -1,6 +1,6 @@
 import React from 'react';
 
-import "../modal.css";
+import "./card.css";
 
 export default function MediaCard({img_path, name, description, handleClose}) {
   return (

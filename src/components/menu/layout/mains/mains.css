@@ -1,0 +1,17 @@
+.mains-name {
+    margin: 0;
+    flex-grow: 1;
+}
+
+.mains-heading {
+    margin: 0 0 1.5rem;
+    border-bottom: 1px solid var(--secondary);
+    color: var(--primary);
+}
+
+.mains-description {
+    flex: 1 1 100%;
+    margin: 0.75rem 0 0;
+    color: var(--secondary);
+}
+

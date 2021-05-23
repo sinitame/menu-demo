@@ -1,9 +1,9 @@
 import React, {useEffect, useState} from "react";
-import {Navigation} from "./components/Navigation";
-import {Header} from "./components/Header";
-import {Gallery} from "./components/Gallery";
-import {Contact} from "./components/Contact";
-import JsonData from './data/landing.json'
+import {Navigation} from "./navigation/Navigation";
+import {Header} from "./header/Header";
+import {Gallery} from "./gallery/Gallery";
+import {Contact} from "./contact/Contact";
+import JsonData from '../../data/landing.json'
 import SmoothScroll from 'smooth-scroll'
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
