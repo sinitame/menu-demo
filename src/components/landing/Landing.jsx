@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
 import {Navigation} from "./navigation/Navigation";
 import {Header} from "./header/Header";
-import {Gallery} from "./galley/Gallery";
+import {Gallery} from "./gallery/Gallery";
 import {Contact} from "./contact/Contact";
 import JsonData from '../../data/landing.json'
 import SmoothScroll from 'smooth-scroll'
