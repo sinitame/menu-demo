@@ -1,7 +1,7 @@
-import '../modal.css';
-import React from "react";
+import React from 'react';
 
-export const Modal = ({ show, bg_img_path, children }) => {
+
+export default function ItemDetails({ show, bg_img_path, children }) {
   const showHideClassName = show ? "modal display-block" : "modal display-none";
   return (
       <div className={showHideClassName}>
