@@ -1,6 +1,6 @@
 
 import React from "react";
-import Logo from "../../common/Logo.jsx";
+import Logo from "./logo/Logo.jsx";
 import MainSection from "./mains/MainsSection.jsx";
 import ExtraSection from "./extras/ExtrasSection.jsx";
 
@@ -17,7 +17,9 @@ export default function MenuLayout({clickHandler, data_path}) {
     document.documentElement.style.setProperty('--light',config.lightColor)
     return (
       <div className="menu">
-        <Logo/>
+        <div className="logo">
+          <Logo logo={data.logo}/>
+        </div>
         <div className="right">
           <MainSection type="Starters" meals={data.starters}
                 clickHandler={clickHandler}/>
