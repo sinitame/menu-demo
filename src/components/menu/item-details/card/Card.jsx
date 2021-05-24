@@ -3,14 +3,17 @@ import React from 'react';
 import "./card.css";
 
 export default function MediaCard({img_path, name, description, handleClose}) {
+  console.log(img_path);
   return (
       <div className="modal-main">
-        <div className="modal-media">
-          <div className="modal-media-inner">
-            <img alt={name} src={img_path} className="modal-image"></img>
+        { img_path !== "" ? 
+          <div className="modal-media">
+            <div className="modal-media-inner">
+              <img alt={name} src={img_path} className="modal-image"></img>
+            </div>
           </div>
-        </div>
-        <div className="modal-content">
+         : null}
+        <div className={ img_path !== "" ? "modal-content-with-img" : "modal-content"}>
           <h2>
             {name}
           </h2>

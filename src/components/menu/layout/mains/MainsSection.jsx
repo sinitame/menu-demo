@@ -6,7 +6,7 @@ import '../menu-layout.css';
 export default function MainSection({meals, type, clickHandler}) {
   return (
       <section className="mains">
-        <h2 className="extras-heading">{type}</h2>
+        <h2 className="mains-heading">{type}</h2>
         {meals.map((meal, index) => (
             <div className="item-container">
               <article onClick={() => clickHandler(meal.img, meal.name,

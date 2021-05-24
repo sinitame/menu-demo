@@ -1,7 +1,7 @@
 
 import React from "react";
-import Logo from "../../common/Logo.jsx";
-import Mains from "./mains/MainsSection.jsx";
+import Logo from "./logo/Logo.jsx";
+import MainSection from "./mains/MainsSection.jsx";
 import ExtraSection from "./extras/ExtrasSection.jsx";
 
 import './menu-layout.css';
@@ -12,17 +12,28 @@ export default function MenuLayout({clickHandler, data_path}) {
   
     // Set menu colors from config
     let config = require(`../../../data/${data_path}/config.json`)
-    document.documentElement.style.setProperty('--primary',config.primaryColor)
-    document.documentElement.style.setProperty('--secondary',config.secondaryColor)
-    document.documentElement.style.setProperty('--light',config.lightColor)
+    if (config.primaryColor) {
+      document.documentElement.style.setProperty('--primary',config.primaryColor)
+    }
+    if (config.secondaryColor) {
+      document.documentElement.style.setProperty('--secondary',config.secondaryColor)
+    }
+    if (config.lightColor) {
+      document.documentElement.style.setProperty('--light',config.lightColor)
+    }
+
+    document.addEventListener("touchstart", function(){}, true);
+    
     return (
       <div className="menu">
-        <Logo/>
+        <div className="logo">
+          <Logo logo={data.logo}/>
+        </div>
         <div className="right">
-          <Mains type="Starters" meals={data.starters}
+          <MainSection type="Starters" meals={data.starters}
                 clickHandler={clickHandler}/>
-          <Mains type="Main" meals={data.mains} clickHandler={clickHandler}/>
-          <Mains type="Desserts" meals={data.deserts}
+          <MainSection type="Main" meals={data.mains} clickHandler={clickHandler}/>
+          <MainSection type="Desserts" meals={data.deserts}
                 clickHandler={clickHandler}/>
         </div>
         <div className="left">

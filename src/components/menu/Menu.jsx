@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+
 import MediaCard from "./item-details/card/Card.jsx";
 import ItemDetails from "./item-details/ItemDetails.jsx";
 import MenuLayout from "./layout/MenuLayout.jsx";
@@ -28,14 +29,13 @@ class App extends Component {
 
   render() {
     return (
-        <div>
-          <ItemDetails show={this.state.show} bg_img_path={this.state.img}>
-            <MediaCard handleClose={this.hideModal} img_path={this.state.img}
-                       name={this.state.name} description={this.state.description}/>
-          </ItemDetails>
-          <MenuLayout clickHandler={this.showModal} data_path={this.props.data_path}/>
-        </div>
-
+      <div>
+        <ItemDetails show={this.state.show} bg_img_path={this.state.img}>
+          <MediaCard handleClose={this.hideModal} img_path={this.state.img}
+                      name={this.state.name} description={this.state.description}/>
+        </ItemDetails>
+        <MenuLayout clickHandler={this.showModal} data_path={this.props.data_path}/>
+      </div>
     );
   }
 }

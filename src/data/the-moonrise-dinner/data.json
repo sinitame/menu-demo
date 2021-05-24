@@ -1,7 +1,8 @@
 {
+  "logo": "assets/the-moonrise-dinner/logo.svg",
   "starters": [
     {
-      "img": "assets/the-moonrise-dinner/default-meal.jpg",
+      "img": "",
       "name": "Entree 1",
       "description": "Crisp romaine lettuce tossed with our homemade Caesar dressing, croutons, and shredded parmesan cheese.",
       "price": "19"
