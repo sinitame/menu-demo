@@ -56,19 +56,11 @@
   border-radius:10px;
 }
 
-.item-container:hover {
+.item-container:hover, .item-container:active{
   box-shadow: 0 0 15px rgba(119, 119, 119, 0.2);
 }
 
 .item-container {
-  transition: all 0.2s;
-  transition-delay: 300ms;
-}
-
-.item-container:active {
-  background-color: #0039A8;
-}
-
-.item-container:focus {
-  background-color: #0F52C1;
+  transition: all .5s;
+  transition-delay: 10ms;
 }

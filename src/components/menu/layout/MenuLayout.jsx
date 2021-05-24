@@ -21,6 +21,8 @@ export default function MenuLayout({clickHandler, data_path}) {
     if (config.lightColor) {
       document.documentElement.style.setProperty('--light',config.lightColor)
     }
+
+    document.addEventListener("touchstart", function(){}, true);
     
     return (
       <div className="menu">
