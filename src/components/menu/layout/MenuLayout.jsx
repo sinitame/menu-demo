@@ -12,9 +12,16 @@ export default function MenuLayout({clickHandler, data_path}) {
   
     // Set menu colors from config
     let config = require(`../../../data/${data_path}/config.json`)
-    document.documentElement.style.setProperty('--primary',config.primaryColor)
-    document.documentElement.style.setProperty('--secondary',config.secondaryColor)
-    document.documentElement.style.setProperty('--light',config.lightColor)
+    if (config.primaryColor) {
+      document.documentElement.style.setProperty('--primary',config.primaryColor)
+    }
+    if (config.secondaryColor) {
+      document.documentElement.style.setProperty('--secondary',config.secondaryColor)
+    }
+    if (config.lightColor) {
+      document.documentElement.style.setProperty('--light',config.lightColor)
+    }
+    
     return (
       <div className="menu">
         <div className="logo">

@@ -13,7 +13,7 @@ export default function MediaCard({img_path, name, description, handleClose}) {
             </div>
           </div>
          : null}
-        <div className="modal-content">
+        <div className={ img_path !== "" ? "modal-content-with-img" : "modal-content"}>
           <h2>
             {name}
           </h2>
